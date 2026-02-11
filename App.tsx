@@ -28,26 +28,26 @@ const App: React.FC = () => {
       <Navbar isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
       
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-32 pb-20">
-        <section id="hero" className="pt-20">
+        <section id="hero" className="pt-20 scroll-mt-20">
           <Hero isDarkMode={isDarkMode} />
         </section>
 
-        <section id="global-advantage">
+        <section id="global-advantage" className="scroll-mt-24">
           <h2 className={`text-3xl md:text-4xl font-heading font-extrabold mb-12 text-center ${isDarkMode ? 'text-white' : 'text-navy'}`}>
             The <span className="text-cyber">Global Advantage</span>
           </h2>
           <Languages isDarkMode={isDarkMode} />
         </section>
 
-        <section id="experience">
+        <section id="experience" className="scroll-mt-24">
           <ExperienceSection isDarkMode={isDarkMode} />
         </section>
 
-        <section id="arsenal">
+        <section id="arsenal" className="scroll-mt-24">
           <TechnicalArsenal isDarkMode={isDarkMode} />
         </section>
 
-        <section id="education">
+        <section id="education" className="scroll-mt-24">
           <Education isDarkMode={isDarkMode} />
         </section>
       </main>

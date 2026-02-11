@@ -70,6 +70,37 @@ const Education: React.FC<EducationProps> = ({ isDarkMode }) => {
             </div>
           </div>
         ))}
+
+        {/* Honor Society Highlight - Clickable & Sparkle Restored */}
+        <a 
+          href="https://betagammasigma.org/home"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`mt-12 p-6 rounded-2xl flex items-center justify-center gap-6 border transition-all duration-300 group block ${
+            isDarkMode 
+              ? 'bg-cyber/5 border-cyber/20 hover:bg-cyber/10 hover:border-cyber/40' 
+              : 'bg-slate-50 border-slate-200 hover:bg-white hover:shadow-lg hover:border-cyber/40'
+          }`}
+        >
+          <div className="w-10 h-10 bg-cyber text-navy rounded-lg flex items-center justify-center shrink-0 shadow-lg shadow-cyber/10 group-hover:scale-110 transition-transform">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+            </svg>
+          </div>
+          <div className="text-left">
+            <div className="flex items-center gap-2">
+              <h4 className={`text-base font-heading font-bold ${isDarkMode ? 'text-white' : 'text-navy'}`}>
+                Beta Gamma Sigma Honor Society
+              </h4>
+              <svg xmlns="http://www.w3.org/2000/svg" className={`h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity ${isDarkMode ? 'text-cyber' : 'text-slate-400'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </div>
+            <p className={`text-[10px] font-mono tracking-wide uppercase ${isDarkMode ? 'text-slate-400' : 'text-slate-500'}`}>
+              Top 10% of the degree cohort - IQS Universitat Ramon Llull
+            </p>
+          </div>
+        </a>
       </div>
     </div>
   );
