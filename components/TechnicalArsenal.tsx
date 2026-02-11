@@ -1,11 +1,7 @@
 
 import React from 'react';
 
-interface TechnicalArsenalProps {
-  isDarkMode: boolean;
-}
-
-const TechnicalArsenal: React.FC<TechnicalArsenalProps> = ({ isDarkMode }) => {
+const TechnicalArsenal: React.FC = () => {
   const categories = [
     {
       title: "Core Financial Analysis",
@@ -29,7 +25,7 @@ const TechnicalArsenal: React.FC<TechnicalArsenalProps> = ({ isDarkMode }) => {
 
   return (
     <div className="space-y-12">
-      <h2 className={`text-3xl md:text-4xl font-heading font-extrabold text-center ${isDarkMode ? 'text-white' : 'text-navy'}`}>
+      <h2 className="text-3xl md:text-4xl font-heading font-extrabold text-center text-white">
         Technical <span className="text-cyber">Arsenal</span>
       </h2>
 
@@ -37,11 +33,9 @@ const TechnicalArsenal: React.FC<TechnicalArsenalProps> = ({ isDarkMode }) => {
         {categories.map((cat, idx) => (
           <div
             key={cat.title}
-            className={`p-8 rounded-3xl border transition-all hover:-translate-y-2 ${
-              isDarkMode ? 'bg-navy-light/30 border-white/5' : 'bg-white shadow-xl border-slate-100'
-            }`}
+            className="p-8 rounded-3xl border transition-all hover:-translate-y-2 bg-navy-light/30 border-white/5"
           >
-            <h3 className={`text-xl font-heading font-bold mb-6 ${isDarkMode ? 'text-white' : 'text-navy'}`}>
+            <h3 className="text-xl font-heading font-bold mb-6 text-slate-300">
               {cat.title}
             </h3>
             <div className="flex flex-wrap gap-3">
