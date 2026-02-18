@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 const Footer: React.FC = () => {
   const [copied, setCopied] = useState(false);
   const email = "david.mitrani.m@gmail.com";
-  const phone = "+1 (305) 801-1543";
 
   const copyEmail = () => {
     navigator.clipboard.writeText(email);
@@ -43,13 +42,6 @@ const Footer: React.FC = () => {
               </span>
             )}
           </button>
-
-          <a
-            href={`tel:${phone.replace(/\s+/g, '')}`}
-            className="flex items-center space-x-2 px-6 py-3 rounded-xl transition-all group bg-white/5 hover:bg-white/10 text-white"
-          >
-            <span className="font-bold group-hover:text-cyber transition-colors">Call Me</span>
-          </a>
         </div>
 
         <div className="space-y-4">
