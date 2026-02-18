@@ -1,12 +1,12 @@
 
 import React, { useEffect } from 'react';
-import Hero from './components/Hero';
-import Languages from './components/Languages';
-import ExperienceSection from './components/ExperienceSection';
-import TechnicalArsenal from './components/TechnicalArsenal';
-import Education from './components/Education';
-import Footer from './components/Footer';
-import Navbar from './components/Navbar';
+import Hero from './components/Hero.tsx';
+import Languages from './components/Languages.tsx';
+import ExperienceSection from './components/ExperienceSection.tsx';
+import TechnicalArsenal from './components/TechnicalArsenal.tsx';
+import Education from './components/Education.tsx';
+import Footer from './components/Footer.tsx';
+import Navbar from './components/Navbar.tsx';
 
 const App: React.FC = () => {
   useEffect(() => {
